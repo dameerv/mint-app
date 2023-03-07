@@ -1,0 +1,47 @@
+# Layout
+layout.header.projectName: OffDolgoff
+layout.header.projectDescription: Личный кабинет юриста
+
+layout.footer.copyrightText: Все права защищены.
+
+layout.footerMenu.termsAndConditionsAnchor: Условия и положения
+layout.footerMenu.privacyPolicyAnchor: Политика конфиденциальности
+layout.footerMenu.dataProtectionAnchor: Защита данных
+
+# Dashboard layout
+dashboardLayout.header.projectName: OffDolgoff
+dashboardLayout.header.signOut: Выйти
+
+dashboardLayout.sidebarMenu.main: Главная
+dashboardLayout.sidebarMenu.managerEdit: Профиль юриста
+dashboardLayout.sidebarMenu.tariffs: Тарифы
+
+# Sign-in
+signin.meta.title: Авторизация
+signin.meta.h1: Авторизация
+
+signin.signinForm.usernameLabel: Имя пользователя
+signin.signinForm.usernamePlaceholder: Введите имя пользователя
+signin.signinForm.passwordLabel: Пароль
+signin.signinForm.passwordPlaceholder: Введите пароль
+signin.signinForm.submitButton: Войти
+
+# Main
+main.meta.title: Главная
+main.meta.h1: Главная
+
+profileEdit.meta.title: Редактирование профиля юриста
+profileEdit.meta.h1: Редактирование профиля юриста
+
+profileEdit.editForm.usernameLabel: Имя пользователя
+profileEdit.editForm.passwordLabel: Пароль
+profileEdit.editForm.submitButton: Сохранить
+
+tariffs.meta.title: Тарифы
+tariffs.meta.h1: Тарифы
+
+tariffs.table.th.name: Название
+tariffs.table.th.alias: Индекс
+tariffs.table.th.price: Стоимость
+tariffs.table.th.is_active: Статус активности
+tariffs.table.th.registration-date: Дата регистрации

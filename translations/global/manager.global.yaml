@@ -1,0 +1,122 @@
+# Layout
+layout.header.projectName: OffDolgoff
+layout.header.projectDescription: Личный кабинет юриста
+
+layout.footer.copyrightText: Все права защищены.
+
+layout.footerMenu.termsAndConditionsAnchor: Условия и положения
+layout.footerMenu.privacyPolicyAnchor: Политика конфиденциальности
+layout.footerMenu.dataProtectionAnchor: Защита данных
+
+# Dashboard layout
+dashboardLayout.header.projectName: OffDolgoff
+dashboardLayout.header.signOut: Выйти
+
+dashboardLayout.sidebarMenu.main: Главная
+dashboardLayout.sidebarMenu.profile: Профиль
+dashboardLayout.sidebarMenu.clients: Клиенты
+dashboardLayout.sidebarMenu.orders: Заявки
+dashboardLayout.sidebarMenu.users-requests: HelpDesk
+
+# Sign-in
+signin.meta.title: Авторизация
+signin.meta.h1: Авторизация
+
+signin.signinForm.usernameLabel: Имя пользователя
+signin.signinForm.usernamePlaceholder: Введите имя пользователя
+signin.signinForm.passwordLabel: Пароль
+signin.signinForm.passwordPlaceholder: Введите пароль
+signin.signinForm.submitButton: Войти
+
+# Main
+main.meta.title: Главная
+main.meta.h1: Главная
+
+# Profile
+profile.meta.title: Профиль
+profile.meta.h1: Профиль
+
+profile.controls.editButton: Редактировать
+profile.view.usernameLabel: Имя пользователя
+
+# Profile edit
+profileEdit.meta.title: Редактирование профиля
+profileEdit.meta.h1: Редактирование профиля
+
+profileEdit.editForm.usernameLabel: Имя пользователя
+profileEdit.editForm.usernamePlaceholder: Введите имя пользователя
+profileEdit.editForm.cancelButton: Отменить
+profileEdit.editForm.submitButton: Сохранить
+
+# Clients
+clients.meta.title: Клиенты
+clients.meta.h1: Клиенты
+client.meta.h1: Клиент
+client.meta.title: Клиент
+
+client.table.th.username: Ник
+client.table.th.phone: Телефон
+client.table.th.email: Email
+client.table.th.registration-date: Дата регистрации
+
+# Orders
+orders.meta.title: Заявки
+orders.meta.h1: Заявки
+orders.table.edit: Изменить
+
+# Order
+order.meta.h1: Заявка
+order.meta.title: Заявка
+order.list.order-number: Номер заявки
+
+# Order edit
+orderEdit.meta.h1: Изменение заявки
+orderEdit.meta.title: Изменение заявки
+
+# UsersRequests
+users-requests.meta.title: Обращение пользователей
+users-requests.meta.h1: Обращение пользователей
+users-request.meta.h1: Обращение
+users-request.meta.title: Обращение
+add-users-request.meta.h1: Добавить обращение пользователя
+add-users-request.meta.title: Добавить обращение пользователя
+edit-users-request.meta.h1: Редактировать обращение пользователя
+edit-users-request.meta.title: Редактировать обращение пользователя
+add-users-request.form.incomingPhone: Входящий номер телефона
+add-users-request.form.incomingPhone.placeholder: С какого номера был сделан звонок
+add-users-request.form.systemPhone: Номер телефона клиента в системе
+add-users-request.form.systemPhone.placeholder: Номер телефона клиента в системе
+add-users-request.form.orderNumber: Номер заказа
+add-users-request.form.orderNumber.placeholder: Номер заказа если известен
+add-users-request.form.message: Сообщение пользователя
+add-users-request.form.message.placeholder: Добавьте сообщение от пользователя
+add-users-request.form.lawyersComments: Комментарий менеджера
+add-users-request.form.lawyersComments.placeholder: Комментарий менеджера
+add-users-request.form.title: Добавить обращение
+edit-users-request.form.title: Редактировать
+add-users-request.form.submit: Добавить обращение
+edit-users-request.form.submit: Сохранить
+add-users-request.form.status.error: В поле статус нужно выбрать одно из значений
+add-users-request.form.status.label: Статус обращения
+add-users-request.form.status.placeholder: Выбирете статус заявки
+add-users-request.form.status.0: Не обработан
+add-users-request.form.status.1: Обрабатывается
+add-users-request.form.status.2: Одобрен
+add-users-request.form.search.placeholder: Поиск по имени, телефону, email, номеру заказа или сообщению
+add-users-request.form.status.3: Отклонен
+add-users-request.form.client-status: Клиент подтвержден
+add-users-request.form.client-status.label: Статус подтверждения клиента
+add-users-request.view.user-request-createdBy: Создал запрос
+add-users-request.view.user-request-createdAt: Дата создания
+add-users-request.view.user-request-lawyersComments: Дата создания
+add-users-request.view.user-request-status: Статус
+add-users-request.view.user-request-craetedBy: Менеджер
+add-users-request.view.user-request-message: Сообщение
+add-users-request.view.user-request-lawyerComments: Комментарии
+add-users-request.view.user-request-orderNumber: Заказ
+add-users-request.view.user-request-systemPhone: Телефон в системе
+add-users-request.view.user-request-incomingPhone: Телефон входящий
+
+# Manager Common
+form.search: Искать
+form.not-found: Ничего не найдено

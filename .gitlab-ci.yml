@@ -1,0 +1,62 @@
+variables:
+  SSH_PORT: 20561
+  SSH_PORT2: 20562
+
+stages:
+  - build_stage
+  - deploy_stage
+  - build_prod
+  - deploy_prod
+  
+
+before_script:
+  - env
+  - ansible --version
+
+build_prod:
+  stage: build_prod
+  script:
+    - ansible-vault decrypt --vault-password-file ~/.ansible.key .env.prod 
+    - cp .env.prod .env
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD registry.webvork.ru
+    - docker build -t registry.webvork.ru/teledoc/vsezakonno.ru/php-prod:latest ./ -f docker/php/Dockerfile --build-arg SSH_PORT=${SSH_PORT2}
+    - docker push registry.webvork.ru/teledoc/vsezakonno.ru/php-prod:latest
+  only:
+    - main
+  except:
+    - schedules
+
+deploy_prod:
+  stage: deploy_prod
+  script:
+    - cd ansible
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD registry.webvork.ru
+    - ansible-playbook --limit=prod --vault-password-file=~/.ansible.key -u ansible -e ENV="prod" --private-key=~/.ssh/id_rsa --diff vsezakonno.yml 
+  only:
+    - main
+  except:
+    - schedules
+
+build_stage:
+  stage: build_stage
+  script:
+    - ansible-vault decrypt --vault-password-file ~/.ansible.key .env.stage
+    - cp .env.stage .env
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD registry.webvork.ru   
+    - docker build -t registry.webvork.ru/teledoc/vsezakonno.ru/php-stage:latest ./ -f docker/php/Dockerfile --build-arg SSH_PORT=${SSH_PORT}
+    - docker push registry.webvork.ru/teledoc/vsezakonno.ru/php-stage:latest
+  only:
+    - stage
+  except:
+    - schedules
+
+deploy_stage:
+  stage: deploy_stage
+  script:
+    - cd ansible
+    - ansible-playbook  --limit=stage --vault-password-file=~/.ansible.key -u ansible -e ENV="stage" --private-key=~/.ssh/id_rsa --diff vsezakonno.yml 
+  only:
+    - stage
+  except:
+    - schedules
+

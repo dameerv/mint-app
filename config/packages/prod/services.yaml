@@ -1,0 +1,14 @@
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    App\Service\SmsSender\SmsSenderInterface:
+        class: 'App\Service\SmsSender\SmscSmsSenderService'
+        arguments:
+            $smscServiceBaseUrl: '%env(SMSC_SERVICE_BASE_URL)%'
+            $smscSender: '%env(SMSC_SENDER)%'
+            $smscAuthorization:
+                login: '%env(SMSC_LOGIN)%'
+                password: '%env(SMSC_PASSWORD)%'

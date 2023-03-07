@@ -1,0 +1,45 @@
+# Layout
+layout.header.projectName: OffDolgoff
+layout.header.signinClient: Личный кабиент клиента
+
+layout.breadcrumbs.homeAnchor: Главная
+layout.breadcrumbs.companyAnchor: Компания
+layout.breadcrumbs.contactsAnchor: Контакты
+layout.breadcrumbs.calculateDebtAnchor: Анализ долга
+layout.breadcrumbs.termsAndConditionsAnchor: Условия и положения
+layout.breadcrumbs.privacyPolicyAnchor: Политика конфиденциальности
+layout.breadcrumbs.dataProtectionAnchor: Защита данных
+
+layout.footer.copyrightText: Все права защищены.
+
+layout.footerMenu.homeAnchor: Главная
+layout.footerMenu.companyAnchor: Компания
+layout.footerMenu.contactsAnchor: Контакты
+layout.footerMenu.managerSignin: Вход для юриста
+
+layout.footerMenu.calculateDebtAnchor: Анализ долга
+layout.footerMenu.termsAndConditionsAnchor: Условия и положения
+layout.footerMenu.privacyPolicyAnchor: Политика конфиденциальности
+layout.footerMenu.dataProtectionAnchor: Защита данных
+
+# Main
+main.promo.projectName: OffDolgoff
+main.promo.projectDescription: >
+  Банкротство — процедура, применяемая по отношению к должнику,
+  направленная на оценку его финансового состояния,
+  выработку мер по улучшению финансового состояния должника, а в случае,
+  если применение таких мер будет признано нецелесообразным или невозможным,
+  — на наиболее равное и справедливое удовлетворение интересов кредиторов
+  несостоятельного должника.
+main.promo.companyAnchor: О компании
+main.menu.getConsultation: Получить план банкротства
+main.menu.howItWorks: Как это работает
+main.menu.whyWe: Почему мы
+main.menu.reviews: Отзывы
+main.menu.contacts: Контакты
+main.section1.hundredsOfPeople: >
+  Уже сотни людей освободились от долгов с нашей помощью. Мы бьемся за каждого нашего клиента,
+  чтобы его финансовое положение максимально улучшилось.
+main.section1.becomeClient: Стать клиентом
+
+# Calculate Debt

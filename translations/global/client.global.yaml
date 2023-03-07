@@ -1,0 +1,168 @@
+# Layout
+layout.header.projectName: OffDolgoff
+layout.header.projectDescription: Личный кабинет клиента
+
+layout.footer.copyrightText: Все права защищены.
+
+layout.footerMenu.termsAndConditionsAnchor: Условия и положения
+layout.footerMenu.privacyPolicyAnchor: Политика конфиденциальности
+layout.footerMenu.dataProtectionAnchor: Защита данных
+
+# SMS
+phoneConfirmator.smsText: 'Код подтверждения OffDolgoff: %code%. Не передавайте этот код никому; наши сотрудники никогда не запрашивают код.'
+
+# Dashboard layout
+dashboardLayout.header.projectName: OffDolgoff
+dashboardLayout.header.signOut: Выйти
+
+dashboardLayout.sidebarMenu.main: Главная
+dashboardLayout.sidebarMenu.profile: Профиль
+dashboardLayout.sidebarMenu.offers: Офферы
+dashboardLayout.sidebarMenu.orders: Заявки
+dashboardLayout.sidebarMenu.payments: Платежи
+dashboardLayout.sidebarMenu.reports: Отчёты
+dashboardLayout.sidebarMenu.analytics: Аналитика
+
+# Sign-in
+signin.meta.title: Вход в систему
+signin.meta.h1: Вход в систему
+
+signin.signinForm.phoneLabel: Номер телефона
+signin.signinForm.phonePlaceholder: + 7 (___) ___ - __-__
+signin.signinForm.passwordLabel: Пароль
+signin.signinForm.passwordPlaceholder: Ваш пароль
+signin.signinForm.submitButton: Войти
+signin.signinForm.forgotPassword: Забыли пароль?
+signin.signinForm.agreement: Я согласен с условиями конфиденциальности
+
+signin.signinForm.signupAnchor: Ещё нет аккаунта?
+
+# Sign-up
+signup.meta.title: Регистрация
+signup.meta.h1: РЕГИСТРАЦИЯ
+
+signup.sendCodeForm.phoneLabel: Номер телефона
+signup.sendCodeForm.phonePlaceholder: + 7 (___) ___ - __-__
+signup.sendCodeForm.submitButton: Отправить СМС
+
+signup.signupForm.passwordLabel: Пароль
+signup.signupForm.passwordPlaceholder: Придумайте пароль
+signup.signupForm.codeLabel: Код из СМС
+signup.signupForm.codePlaceholder: Введите код из СМС
+signup.signupForm.submitButton: Подтвердить и продолжить
+signup.signupForm.policyAgreement: Я согласен с  условиями конфиденциальности
+signup.signupForm.inputCode: проверочный код
+signup.signupForm.signin: Уже зарегистрированы?
+
+signup.signupForm.signinAnchor: Уже есть аккаунт?
+
+# Forgot password
+forgotPassword.meta.title: Восстановление пароля
+forgotPassword.meta.h1: Восстановление пароля
+
+forgotPassword.sendCodeForm.phoneLabel: Номер телефона
+forgotPassword.sendCodeForm.phonePlaceholder: Введите номер телефона
+forgotPassword.sendCodeForm.submitButton: Отправить СМС
+
+forgotPassword.forgotPasswordForm.codeLabel: Код из СМС
+forgotPassword.forgotPasswordForm.codePlaceholder: Введите код из СМС
+forgotPassword.forgotPasswordForm.passwordLabel: Пароль
+forgotPassword.forgotPasswordForm.passwordPlaceholder: Придумайте пароль
+forgotPassword.forgotPasswordForm.submitButton: Подтвердить и продолжить
+
+forgotPassword.forgotPasswordForm.signinAnchor: Вспомнили пароль?
+
+# Main
+main.meta.title: Главная
+main.meta.h1: Главная
+
+# Profile
+profile.meta.title: Профиль
+profile.meta.h1: Профиль
+
+profile.controls.editButton: Редактировать
+profile.view.usernameLabel: Имя пользователя
+profile.view.phoneLabel: Номер телефона
+profile.view.fullNameLabel: Полное имя
+profile.view.contactEmailLabel: Контактный email
+
+# Profile edit
+profileEdit.meta.title: Редактирование профиля
+profileEdit.meta.h1: Редактирование профиля
+
+profileEdit.editForm.phoneLabel: Номер телефона
+profileEdit.editForm.usernameLabel: Имя пользователя
+profileEdit.editForm.usernamePlaceholder: Введите имя пользователя
+profileEdit.editForm.fullNameLabel: Полное имя
+profileEdit.editForm.fullNamePlaceholder: Введите полное имя
+profileEdit.editForm.contactEmailLabel: Контактный email
+profileEdit.editForm.contactEmailPlaceholder: Введите контактный email
+profileEdit.editForm.cancelButton: Отменить
+profileEdit.editForm.submitButton: Сохранить
+
+# Offers
+offers.meta.title: Офферы
+offers.meta.h1: Офферы
+
+# Orders
+orders.meta.title: Заявки
+orders.meta.h1: Заявки
+
+# Order
+order.meta.title: 'Заявка'
+order.meta.h1: 'Заявка'
+
+# Payments
+payments.meta.title: Платежи
+payments.meta.h1: Платежи
+
+# Reports
+reports.meta.title: Отчёты
+reports.meta.h1: Отчёты
+
+# Analytics
+analytics.meta.title: Аналитика
+analytics.meta.h1: Аналитика
+
+# Tariffs
+# todo перенести в БД
+
+# Tariffs (Заголовки)
+tariffs.snippets.bankruptcy_light_2_complete: Базовый
+tariffs.snippets.bankruptcy_light_2_parts_1: Базовый +
+tariffs.snippets.bankruptcy_light_2_parts_2: Стандарт
+tariffs.snippets.bankruptcy_light_2_parts_3: Стандарт +
+tariffs.snippets.bankruptcy_light_2_parts_4: Эконом
+tariffs.snippets.bankruptcy_light_2_parts_5: Эконом +
+tariffs.snippets.bankruptcy_light_2_parts_6: Спецпредложение
+
+tariffs.snippets.bankruptcy_full_2_complete: Базовый
+tariffs.snippets.bankruptcy_full_2_parts_1: Базовый +
+tariffs.snippets.bankruptcy_full_2_parts_2: Стандарт
+tariffs.snippets.bankruptcy_full_2_parts_3: Стандарт +
+tariffs.snippets.bankruptcy_full_2_parts_4: Эконом
+tariffs.snippets.bankruptcy_full_2_parts_5: Эконом +
+tariffs.snippets.bankruptcy_full_2_parts_6: Спецпредложение
+
+# Tariffs (Описание)
+tariffs.snippets.payments.bankruptcy_light_2_complete: Цена 100 000 при оплате всей суммы сразу
+tariffs.snippets.payments.bankruptcy_light_2_parts_1: от 60 000 рублей в месяц
+tariffs.snippets.payments.bankruptcy_light_2_parts_2: от 32 500 рублей в месяц
+tariffs.snippets.payments.bankruptcy_light_2_parts_3: от 23 500 рублей в месяц
+tariffs.snippets.payments.bankruptcy_light_2_parts_4: от 18 250 рублей в месяц
+tariffs.snippets.payments.bankruptcy_light_2_parts_5: от 16 000 рублей в месяц
+tariffs.snippets.payments.bankruptcy_light_2_parts_6: от 5 000 рублей в месяц
+
+tariffs.snippets.payments.bankruptcy_full_2_complete: Цена 160 000 при оплате всей суммы сразу
+tariffs.snippets.payments.bankruptcy_full_2_parts_1: от 100 000 рублей в месяц
+tariffs.snippets.payments.bankruptcy_full_2_parts_2: от 50 000 рублей в месяц
+tariffs.snippets.payments.bankruptcy_full_2_parts_3: от 33 500 рублей в месяц
+tariffs.snippets.payments.bankruptcy_full_2_parts_4: от 25 000 рублей в месяц
+tariffs.snippets.payments.bankruptcy_full_2_parts_5: от 20 000 рублей в месяц
+tariffs.snippets.payments.bankruptcy_full_2_parts_6: от 5 000 рублей в месяц
+
+# Tariffs (Комментарии)
+tariffs.snippets.duties_included: Судебные пошлины включены
+tariffs.snippets.arbitrator: Арбитражный управляющий
+tariffs.snippets.Individual_protection_plan: Индивидуальный план защиты
+tariffs.snippets.button: Заказать
