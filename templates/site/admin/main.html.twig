@@ -1,0 +1,541 @@
+{% extends 'base.html.twig' %}
+{% block page %}
+    <div class="horizontalMenucontainer">
+        <div class="page">
+            <div class="page-main">
+
+                <!--app header-->
+                <div class="app-header header sticky" style="margin-bottom: -85.8px;">
+                    <div class="container-fluid main-container">
+                        <div class="d-flex">
+                            <a class="header-brand" href="index.html">
+                                <img src="/assets/images/brand/logo.png" class="header-brand-img desktop-lgo"
+                                     alt="Dayonelogo">
+                                <img src="/assets/images/brand/logo-white.png" class="header-brand-img dark-logo"
+                                     alt="Dayonelogo">
+                                <img src="/assets/images/brand/favicon.png" class="header-brand-img mobile-logo"
+                                     alt="Dayonelogo">
+                                <img src="/assets/images/brand/favicon1.png" class="header-brand-img darkmobile-logo"
+                                     alt="Dayonelogo">
+                            </a>
+                            <div class="app-sidebar__toggle" data-bs-toggle="sidebar">
+                                <a class="open-toggle" href="javascript:void(0);">
+                                    <i class="feather feather-menu"></i>
+                                </a>
+                                <a class="close-toggle" href="javascript:void(0);">
+                                    <i class="feather feather-x"></i>
+                                </a>
+                            </div>
+                            <div class="d-flex order-lg-2 my-auto ms-auto">
+                                <button class="navbar-toggler nav-link icon navresponsive-toggler vertical-icon ms-auto"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent-4"
+                                        aria-controls="navbarSupportedContent-4" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                    <i class="fe fe-more-vertical header-icons navbar-toggler-icon"></i>
+                                </button>
+                                <div class="mb-0 navbar navbar-expand-lg navbar-nav-right responsive-navbar navbar-dark p-0">
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                                        <div class="d-flex ms-auto">
+                                            <a class="nav-link  icon p-0 nav-link-lg d-lg-none navsearch"
+                                               href="javascript:void(0);" data-bs-toggle="search">
+                                                <i class="feather feather-search search-icon header-icon"></i>
+                                            </a>
+                                            <div class="dropdown  d-flex">
+                                                <a class="nav-link icon theme-layout nav-link-bg layout-setting">
+                                                    <span class="dark-layout"><i class="fe fe-moon"></i></span>
+                                                    <span class="light-layout"><i class="fe fe-sun"></i></span>
+                                                </a>
+                                            </div>
+
+                                            <div class="dropdown header-fullscreen">
+                                                <a class="nav-link icon full-screen-link">
+                                                    <i class="feather feather-maximize fullscreen-button fullscreen header-icons"></i>
+                                                    <i class="feather feather-minimize fullscreen-button exit-fullscreen header-icons"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--/app header-->
+
+
+                <!--app-sidebar-->
+                <div class="sticky" style="margin-bottom: -85.8px;">
+                    {% include 'site/admin/_partial/app_sidebar.html.twig' %}
+
+                    <!--app-sidebar closed-->
+
+                    <div class="app-content main-content">
+                        <div class="side-app main-container">
+
+                            <!--Page header-->
+                            <div class="page-header d-lg-flex d-block">
+                                <div class="page-leftheader">
+                                    <div class="page-title">Чаты</div>
+                                </div>
+
+                            </div>
+                            <!--End Page header-->
+
+                            <!-- Row -->
+                            {% include 'site/admin/_partial/chat.html.twig' %}
+                            <!-- /Row -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row align-items-center flex-row-reverse">
+
+                        </div>
+                    </div>
+                </footer>
+                <!-- End Footer-->
+
+                <!--sidebar-right-->
+                <div class="sidebar sidebar-right sidebar-animate ps ps--active-y">
+                    <div class="card-header border-bottom pb-5">
+                        <h4 class="card-title">Notifications </h4>
+                        <div class="card-options">
+                            <a href="javascript:void(0);" class="btn btn-sm btn-icon btn-light  text-primary"
+                               data-bs-toggle="sidebar-right" data-bs-target=".sidebar-right"><i
+                                        class="feather feather-x"></i> </a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="list-group-item  align-items-center border-0">
+                            <div class="d-flex">
+                            <span class="avatar avatar-lg brround me-3"
+                                  style="background-image: url('/assets/images/users/4.jpg')"></span>
+                                <div class="mt-1">
+                                    <a href="javascript:void(0);" class="font-weight-semibold fs-16">Liam <span
+                                                class="text-muted font-weight-normal">Sent Message</span></a>
+                                    <span class="clearfix"></span>
+                                    <span class="text-muted fs-13 ms-auto"><i class="mdi mdi-clock text-muted me-1"></i>30 mins ago</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="" class="me-0 option-dots" data-bs-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <span class="feather feather-more-horizontal"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" role="menu">
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-eye me-2"></i>View</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-plus-circle me-2"></i>Add</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-trash-2 me-2"></i>Remove</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-settings me-2"></i>More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item  align-items-center  border-bottom">
+                            <div class="d-flex">
+                            <span class="avatar avatar-lg brround me-3"
+                                  style="background-image: url(/assets/images/users/10.jpg)"></span>
+                                <div class="mt-1">
+                                    <a href="javascript:void(0);" class="font-weight-semibold fs-16">Paul<span
+                                                class="text-muted font-weight-normal"> commented on you post</span></a>
+                                    <span class="clearfix"></span>
+                                    <span class="text-muted fs-13 ms-auto"><i class="mdi mdi-clock text-muted me-1"></i>1 hour ago</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="" class="me-0 option-dots" data-bs-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <span class="feather feather-more-horizontal"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" role="menu">
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-eye me-2"></i>View</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-plus-circle me-2"></i>Add</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-trash-2 me-2"></i>Remove</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-settings me-2"></i>More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item  align-items-center  border-bottom">
+                            <div class="d-flex">
+                            <span class="avatar avatar-lg brround me-3 bg-pink-transparent"><span
+                                        class="feather feather-shopping-cart"></span></span>
+                                <div class="mt-1">
+                                    <a href="javascript:void(0);" class="font-weight-semibold fs-16">James<span
+                                                class="text-muted font-weight-normal"> Order Placed</span></a>
+                                    <span class="clearfix"></span>
+                                    <span class="text-muted fs-13 ms-auto"><i class="mdi mdi-clock text-muted me-1"></i>1 day ago</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="" class="me-0 option-dots" data-bs-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <span class="feather feather-more-horizontal"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" role="menu">
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-eye me-2"></i>View</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-plus-circle me-2"></i>Add</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-trash-2 me-2"></i>Remove</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-settings me-2"></i>More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item  align-items-center  border-bottom">
+                            <div class="d-flex">
+							<span class="avatar avatar-lg brround me-3"
+                                  style="background-image: url(/assets/images/users/9.jpg)">
+								<span class="avatar-status bg-green"></span>
+							</span>
+                                <div class="mt-1">
+                                    <a href="javascript:void(0);" class="font-weight-semibold fs-16">Diane<span
+                                                class="text-muted font-weight-normal"> New Message Received</span></a>
+                                    <span class="clearfix"></span>
+                                    <span class="text-muted fs-13 ms-auto"><i class="mdi mdi-clock text-muted me-1"></i>1 day ago</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="" class="me-0 option-dots" data-bs-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <span class="feather feather-more-horizontal"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" role="menu">
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-eye me-2"></i>View</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-plus-circle me-2"></i>Add</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-trash-2 me-2"></i>Remove</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-settings me-2"></i>More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item  align-items-center  border-bottom">
+                            <div class="d-flex">
+							<span class="avatar avatar-lg brround me-3"
+                                  style="background-image: url(/assets/images/users/5.jpg)">
+								<span class="avatar-status bg-muted"></span>
+							</span>
+                                <div class="mt-1">
+                                    <a href="javascript:void(0);" class="font-weight-semibold fs-16">Vinny<span
+                                                class="text-muted font-weight-normal"> shared your post</span></a>
+                                    <span class="clearfix"></span>
+                                    <span class="text-muted fs-13 ms-auto"><i class="mdi mdi-clock text-muted me-1"></i>2 days ago</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="" class="me-0 option-dots" data-bs-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <span class="feather feather-more-horizontal"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" role="menu">
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-eye me-2"></i>View</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-plus-circle me-2"></i>Add</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-trash-2 me-2"></i>Remove</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-settings me-2"></i>More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item  align-items-center  border-bottom">
+                            <div class="d-flex">
+                                <span class="avatar avatar-lg brround me-3 bg-primary-transparent">M</span>
+                                <div class="mt-1">
+                                    <a href="javascript:void(0);" class="font-weight-semibold fs-16">Mack<span
+                                                class="text-muted font-weight-normal"> your admin lanuched</span></a>
+                                    <span class="clearfix"></span>
+                                    <span class="text-muted fs-13 ms-auto"><i class="mdi mdi-clock text-muted me-1"></i>1 week ago</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="" class="me-0 option-dots" data-bs-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <span class="feather feather-more-horizontal"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" role="menu">
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-eye me-2"></i>View</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-plus-circle me-2"></i>Add</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-trash-2 me-2"></i>Remove</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-settings me-2"></i>More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item  align-items-center  border-bottom">
+                            <div class="d-flex">
+							<span class="avatar avatar-lg brround me-3"
+                                  style="background-image: url(/assets/images/users/12.jpg)">
+								<span class="avatar-status bg-green"></span>
+							</span>
+                                <div class="mt-1">
+                                    <a href="javascript:void(0);" class="font-weight-semibold fs-16">Vinny<span
+                                                class="text-muted font-weight-normal"> shared your post</span></a>
+                                    <span class="clearfix"></span>
+                                    <span class="text-muted fs-13 ms-auto"><i class="mdi mdi-clock text-muted me-1"></i>04 Jan 2021 1:56 Am</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="" class="me-0 option-dots" data-bs-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <span class="feather feather-more-horizontal"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" role="menu">
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-eye me-2"></i>View</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-plus-circle me-2"></i>Add</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-trash-2 me-2"></i>Remove</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-settings me-2"></i>More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item  align-items-center  border-bottom">
+                            <div class="d-flex">
+                            <span class="avatar avatar-lg brround me-3"
+                                  style="background-image: url(/assets/images/users/8.jpg)">	</span>
+                                <div class="mt-1">
+                                    <a href="javascript:void(0);" class="font-weight-semibold fs-16">Anna<span
+                                                class="text-muted font-weight-normal"> likes your post</span></a>
+                                    <span class="clearfix"></span>
+                                    <span class="text-muted fs-13 ms-auto"><i class="mdi mdi-clock text-muted me-1"></i>25 Dec 2020 11:25 Am</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="" class="me-0 option-dots" data-bs-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <span class="feather feather-more-horizontal"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" role="menu">
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-eye me-2"></i>View</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-plus-circle me-2"></i>Add</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-trash-2 me-2"></i>Remove</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-settings me-2"></i>More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item  align-items-center  border-bottom">
+                            <div class="d-flex">
+                            <span class="avatar avatar-lg brround me-3"
+                                  style="background-image: url(/assets/images/users/14.jpg)">	</span>
+                                <div class="mt-1">
+                                    <a href="javascript:void(0);" class="font-weight-semibold fs-16">Kimberly<span
+                                                class="text-muted font-weight-normal"> Completed one task</span></a>
+                                    <span class="clearfix"></span>
+                                    <span class="text-muted fs-13 ms-auto"><i class="mdi mdi-clock text-muted me-1"></i>24 Dec 2020 9:30 Pm</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="" class="me-0 option-dots" data-bs-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <span class="feather feather-more-horizontal"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" role="menu">
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-eye me-2"></i>View</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-plus-circle me-2"></i>Add</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-trash-2 me-2"></i>Remove</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-settings me-2"></i>More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item  align-items-center  border-bottom">
+                            <div class="d-flex">
+                            <span class="avatar avatar-lg brround me-3"
+                                  style="background-image: url(/assets/images/users/3.jpg)">	</span>
+                                <div class="mt-1">
+                                    <a href="javascript:void(0);" class="font-weight-semibold fs-16">Rina<span
+                                                class="text-muted font-weight-normal"> your account has Updated</span></a>
+                                    <span class="clearfix"></span>
+                                    <span class="text-muted fs-13 ms-auto"><i class="mdi mdi-clock text-muted me-1"></i>28 Nov 2020 7:16 Am</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="" class="me-0 option-dots" data-bs-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <span class="feather feather-more-horizontal"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" role="menu">
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-eye me-2"></i>View</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-plus-circle me-2"></i>Add</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-trash-2 me-2"></i>Remove</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-settings me-2"></i>More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item  align-items-center  border-bottom">
+                            <div class="d-flex">
+                                <span class="avatar avatar-lg brround me-3 bg-success-transparent">J</span>
+                                <div class="mt-1">
+                                    <a href="javascript:void(0);" class="font-weight-semibold fs-16">Julia<span
+                                                class="text-muted font-weight-normal"> Prepare for Presentation</span></a>
+                                    <span class="clearfix"></span>
+                                    <span class="text-muted fs-13 ms-auto"><i class="mdi mdi-clock text-muted me-1"></i>18 Nov 2020 11:55 Am</span>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="" class="me-0 option-dots" data-bs-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <span class="feather feather-more-horizontal"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" role="menu">
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-eye me-2"></i>View</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i
+                                                        class="feather feather-plus-circle me-2"></i>Add</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-trash-2 me-2"></i>Remove</a>
+                                        </li>
+                                        <li><a href="javascript:void(0);"><i class="feather feather-settings me-2"></i>More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                    </div>
+                    <div class="ps__rail-y" style="top: 0px; height: 968px; right: 0px;">
+                        <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 900px;"></div>
+                    </div>
+                </div>
+                <!--/sidebar-right-->
+
+                <!--Change password Modal -->
+                <div class="modal fade" id="changepasswordnmodal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Change Password</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label class="form-label">New Password</label>
+                                    <input type="password" class="form-control" placeholder="password" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Confirm New Password</label>
+                                    <input type="password" class="form-control" placeholder="password" value="">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="javascript:void(0);" class="btn btn-outline-primary"
+                                   data-bs-dismiss="modal">Close</a>
+                                <a href="javascript:void(0);" class="btn btn-primary">Confirm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Change password Modal  -->
+
+            </div>
+        </div>
+    </div>
+    <a href="#top" id="back-to-top"><span class="feather feather-chevrons-up"></span></a>
+{% endblock %}
+{% block javascripts %}
+{{ parent() }}
+
+<!-- Jquery js-->
+<script src="/assets/plugins/jquery/jquery.min.js"></script>
+
+<!--Moment js-->
+<script src="/assets/plugins/moment/moment.js"></script>
+
+<!-- Bootstrap js-->
+<script src="/assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--Othercharts js-->
+<script src="/assets/plugins/othercharts/jquery.sparkline.min.js"></script>
+
+<!-- Circle-progress js-->
+<script src="/assets/plugins/circle-progress/circle-progress.min.js"></script>
+
+<!--Sidemenu js-->
+<script src="/assets/plugins/sidemenu/sidemenu.js"></script>
+
+<!-- P-scroll js-->
+<script src="/assets/plugins/p-scrollbar/p-scrollbar.js"></script>
+<script src="/assets/plugins/p-scrollbar/p-scroll1.js"></script>
+
+<!--Sidebar js-->
+<script src="/assets/plugins/sidebar/sidebar.js"></script>
+
+<!-- Select2 js -->
+<script src="/assets/plugins/select2/select2.full.min.js"></script>
+
+<!-- INTERNAL lightslider js -->
+<script src="/assets/plugins/lightslider/js/lightslider.min.js"></script>
+
+<!-- INTERNAL Chat js-->
+<script src="/assets/js/chat2.js"></script>
+
+<!--Sticky js -->
+<script src="/assets/js/sticky.js"></script>
+
+
+<!-- Color Theme js -->
+<script src="/assets/js/themeColors.js"></script>
+
+<!-- custom js -->
+<script src="/assets/js/custom.js"></script>
+{% endblock %}

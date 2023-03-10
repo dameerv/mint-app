@@ -15,7 +15,7 @@ class MainController extends BaseController
     public function __invoke(): Response
     {
         return $this->render(
-            'site/messages.html.twig',
+            'site/main.html.twig',
                 []
         );
     }

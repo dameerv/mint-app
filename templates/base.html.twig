@@ -5,6 +5,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Favicon -->
+    <link rel="icon" href="/assets/images/brand/favicon.ico" type="image/x-icon"/>
+
+    <!-- Bootstrap css -->
+    <link href="/assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Style css -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link href="/assets/css/plugins.css" rel="stylesheet" />
+    <link href="/assets/css/boxed.css" rel="stylesheet" />
+    <link href="/assets/css/dark.css" rel="stylesheet" />
+    <link href="/assets/css/skin-modes.css" rel="stylesheet" />
+    <link href="/assets/css/transparent-style.css" rel="stylesheet">
+
+    <!-- Animate css -->
+    <link href="/assets/css/animated.css" rel="stylesheet" />
+
+    <!---Icons css-->
+    <link href="/assets/css/icons.css" rel="stylesheet" />
+
     <title>Document</title>
     {% block stylesheets %}
         {# 'app' must match the first argument to addEntry() in webpack.config.js #}
@@ -14,8 +35,10 @@
              <link rel="stylesheet" href="/build/app.css"> -->
     {% endblock %}
 </head>
-<body>
-{% block body %}
+<body class="app sidebar-mini ltr">
+{% block page %}
+{% endblock %}
+{% block client %}
 {% endblock %}
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
@@ -25,5 +48,6 @@
         <script src="/build/app.js" defer></script>
         See note below about the "defer" attribute -->
 {% endblock %}
+
 </body>
 </html>

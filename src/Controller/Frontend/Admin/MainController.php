@@ -2,7 +2,6 @@
 
 namespace App\Controller\Frontend\Admin;
 
-use App\Request\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -16,10 +15,10 @@ class MainController extends BaseController
     /**
      * @Route("", name="client-main")
      */
-    public function __invoke(Request $request): Response
+    public function __invoke(): Response
     {
         return $this->render(
-            'admin/main.html.twig',
+            'site/admin/main.html.twig',
                 []
         );
     }
