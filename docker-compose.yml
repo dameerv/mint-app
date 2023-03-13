@@ -36,7 +36,7 @@ services:
     container_name: chat
     build: docker/php/
     ports:
-      - "8080:10000"
+      - "8085:10000"
     restart: always
     volumes:
       - ./:/var/www

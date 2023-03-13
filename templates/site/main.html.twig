@@ -55,9 +55,9 @@
                 </div>
             </div>
             <div class="popup-messages pt-0">
-                <div class="direct-chat-messages">
+                <div class="direct-chat-messages" id="clientsDirectChatMessages">
                     <div class="chat-box-single-line">
-                        <abbr class="timestamp">March 15th, 2021</abbr>
+                        <abbr class="timestamp">{{ 'now' | date('M d, y') }}</abbr>
                     </div>
                     <div class="direct-chat-msg">
                         <div class="direct-chat-text">Hello. How are you today?<small class="time-text">10.00am</small></div>
@@ -74,96 +74,13 @@
                         </div>
                         <img class="direct-chat-img" src="../assets/images/users/1.jpg" alt="message user image">
                     </div>
-                    <div class="chat-box-single-line mt-5">
-                        <abbr class="timestamp">March 16th, 2021</abbr>
-                    </div>
-                    <div class="direct-chat-msg">
-                        <div class="direct-chat-text">Various versions have evolved over the years, sometimes<small class="time-text">10.00am</small></div>
-                        <img class="direct-chat-img me-2" src="../assets/images/users/16.jpg" alt="message user image">
-                    </div>
-                    <div class="direct-chat-msg right">
-                        <div class="direct-chat-text">
-                            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-                            <small class="time-text">10.00am</small>
-                        </div>
-                        <img class="direct-chat-img" src="../assets/images/users/1.jpg" alt="message user image">
-                    </div>
-                    <div class="direct-chat-msg">
-                        <div class="direct-chat-text">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary<small class="time-text">10.00am</small></div>
-                        <div class="direct-chat-text">making this the first true generator on the Internet<small class="time-text">10.00am</small></div>
-                        <img class="direct-chat-img me-2" src="../assets/images/users/16.jpg" alt="message user image">
-                    </div>
-                    <div class="direct-chat-msg right">
-                        <div class="direct-chat-text">
-                            <img src="../assets/images/photos/1.jpg" class="d-block" alt="img">
-                            <small class="time-text">10.00am</small>
-                        </div>
-                        <img class="direct-chat-img" src="../assets/images/users/1.jpg" alt="message user image">
-                    </div>
-                    <div class="chat-box-single-line mt-5">
-                        <abbr class="timestamp">March 16th, 2021</abbr>
-                    </div>
-                    <div class="direct-chat-msg">
-                        <div class="direct-chat-text">Various versions have evolved over the years, sometimes<small class="time-text">10.00am</small></div>
-                        <img class="direct-chat-img me-2" src="../assets/images/users/16.jpg" alt="message user image">
-                    </div>
-                    <div class="direct-chat-msg right">
-                        <div class="direct-chat-text">
-                            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-                            <small class="time-text">10.00am</small>
-                        </div>
-                        <img class="direct-chat-img" src="../assets/images/users/1.jpg" alt="message user image">
-                    </div>
-                    <div class="direct-chat-msg">
-                        <div class="direct-chat-text"><iframe src="https://www.youtube.com/embed/kFjETSa9N7A" allow="accelerometer; autoplay;" allowfullscreen="" width="100" height="250"></iframe><small class="time-text">10.00am</small></div>
-                        <div class="direct-chat-text">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary<small class="time-text">10.00am</small></div>
-                        <img class="direct-chat-img me-2" src="../assets/images/users/16.jpg" alt="message user image">
-                    </div>
-                    <div class="direct-chat-msg right">
-                        <div class="direct-chat-text">
-                            <img src="../assets/images/photos/2.jpg" class="d-block" alt="img">
-                            <small class="time-text">10.00am</small>
-                        </div>
-                        <div class="direct-chat-text">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary<small class="time-text">10.00am</small></div>
-                        <img class="direct-chat-img me-2" src="../assets/images/users/16.jpg" alt="message user image">
-                    </div>
-                    <div class="direct-chat-msg">
-                        <div class="direct-chat-text">making this the first true generator on the Internet<small class="time-text">10.00am</small></div>
-                        <img class="direct-chat-img me-2" src="../assets/images/users/16.jpg" alt="message user image">
-                    </div>
-                    <div class="direct-chat-msg right">
-                        <div class="direct-chat-text">
-                            <div class="d-flex">
-                                <i class="fe fe-file-text fs-40 op-2 text-muted d-block me-2"></i>
-                                <div>
-                                    <div class="font-weight-bold fs-12">sampledemo.txt</div>
-                                    <span class="fs-12">4.5 kb</span>
-                                </div>
-                            </div>
-                            <small class="time-text">10.00am</small>
-                        </div>
-                        <div class="direct-chat-text pb-6">
-                            <div class="d-flex">
-                                <div><img src="../assets/images/photos/thumb1.jpg" class="m-1 w-8 h-8 br-2" alt="img"></div>
-                                <div><img src="../assets/images/photos/thumb2.jpg" class="m-1 w-8 h-8 br-2" alt="img"></div>
-                            </div>
-                            <div class="d-flex">
-                                <div><img src="../assets/images/photos/thumb3.jpg" class="m-1 w-8 h-8 br-2" alt="img"></div>
-                                <div class="relative"><img src="../assets/images/photos/thumb4.jpg" class="m-1 w-8 h-8 br-2" alt="img">
-                                    <div class="more-images">+10</div>
-                                </div>
-                            </div>
-                            <small class="time-text">10.00am</small>
-                        </div>
-                        <img class="direct-chat-img" src="../assets/images/users/1.jpg" alt="message user image">
-                    </div>
+
                 </div>
             </div>
             <div class="popup-messages-footer card-footer p-0">
-                <textarea id="status_message" placeholder="Type a message..." rows="10" cols="40" name="message" class="form-control"></textarea>
+                <textarea id="statusMessage" placeholder="Type a message..." rows="10" cols="40" name="message" class="form-control"></textarea>
                 <div class="chat-footer-icons">
-                    <a class="" href="javascript:void(0);"><i class="fe fe-paperclip text-muted"></i></a>
-                    <a class="" href="javascript:void(0);"><i class="fe fe-send text-muted"></i></a>
+                    <a class="" id="sendMessageBtn" href="javascript:void(0);"><i class="fe fe-send text-muted"></i></a>
                 </div>
             </div>
         </div>
@@ -216,9 +133,68 @@
                 class="feather feather-message-square"></i></a>
 {% endblock %}
 {% block javascripts %}
+    <script>
+        let socket = new WebSocket("ws://localhost:8085");
+
+        socket.onopen = function(e) {
+           $('#sendMessageBtn').click(function(){
+                let messageText = $('#statusMessage').val();
+                let data = {
+                    'message': messageText,
+                    'hust-data': 565
+                }
+                socket.send(JSON.stringify(data));
+            })
+        };
+
+        socket.onmessage = function(event) {
+            let messagesContainer =  $('#clientsDirectChatMessages');
+            let message = createLeftMessage(event.data);
+            let messages = messagesContainer.clone();
+            messages.append(message);
+
+            messagesContainer.html(messages);
+        };
+
+        socket.onclose = function(event) {
+            if (event.wasClean) {
+                console.log('[close] Соединение закрыто чисто, код=${event.code} причина=${event.reason}');
+            } else {
+                console.log('[close] Соединение прервано');
+            }
+        };
+
+        socket.onerror = function(error) {
+            console.log(`[error]`);
+        };
+
+
+    </script>
     {{ parent() }}
     <script src="/assets/js/livechat.js"></script>
     <script src="/assets/js/sticky.js"></script>
     <script src="/assets/js/themeColors.js"></script>
     <script src="/assets/js/custom.js"></script>
+
+    <script>
+        function createLeftMessage(text){
+            const date = new Date();
+            return '<div class="direct-chat-msg">' +
+                        '<div class="direct-chat-text">'+
+                                 text +
+                             // '<small class="time-text">' + date.now() + '</small>' +
+                        '</div>' +
+                    '</div>';
+        }
+
+        function createRightMessage(text){
+            const date = new Date();
+            return '<div class="direct-chat-msg right">' +
+                        '<div class="direct-chat-text">' +
+                            text +
+                            // '<small class="time-text">10.00am</small>' +
+                        '</div>' +
+                    '</div>';
+        }
+    </script>
 {% endblock %}
